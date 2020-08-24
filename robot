@@ -14,7 +14,7 @@ demarrage = ["Comment allez-vous ?",
 mot_cle = ["père", "mère", "copain", "copine",
            "maman", "ami", "amie"]
 
-premiere_reponse = ["Commant va votre{0}",
+premiere_reponse = ["Commant va votre {0}",
                     "La relation avec {0} vous pose-t-elle problème ?",
                     "Pourquoi pensez-vous en ce moment à votre {0} ?"]
 
