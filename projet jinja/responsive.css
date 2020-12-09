@@ -1,0 +1,24 @@
+/* Ecran qui ont 800px ou moins */
+@media screen and (max-width: 1010px)
+{
+	#container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.jesse {
+		width: 100%;
+		height: 100%;
+	}
+
+	.graph {
+
+	}
+
+	.image{
+		object-position: left;
+	}
+
+}	
