@@ -1,0 +1,195 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jul 27 12:01:18 2020
+
+@author: simplon
+"""
+
+#1    
+utilisateur = input("veuillez entrer un mot")
+mot = ""
+for lettre in utilisateur:
+    mot = lettre + mot
+print(mot)
+
+#correction
+mot = input()
+
+for i in range(len(mot)) :
+    index = len(mot) - i -1
+    index = -1-i # calcul équivalent
+    print(mot[index],end="")
+
+#2
+for calcul in x:
+    x = input("Entrez un nombre quelconque :")
+    calcul = (3*(x**2)) + (5*x) + 1
+print(calcul)
+
+for calcul in x:
+    utilisateur = input("Entrez un nombre quelconque :")
+    x = utilisateur
+    calcul = ((3*(x ** 2)) + (5*x) + 1)
+
+#correction
+for k in range(3) :
+    print("Entrez une valeur pour x :")
+    x = float(input())
+    valeur = 3 * x * x + 5 * x + 1
+    print("f(x) =",valeur)
+
+#3
+s = 0
+n = int(input("Entrez un nombre :"))
+for i in range(n+1):
+    s =  s + nfor k in range(3) :
+    print("Entrez une valeur pour x :")
+    x = float(input())
+    valeur = 3 * x * x + 5 * x + 1
+    print("f(x) =",valeur)
+print(s)
+
+#correction
+print("Entrez le nombre n : ")
+n = int(input())
+somme = 0
+
+for i in range(n+1): # piège : pensez à écrire n+1
+    somme = somme + i
+    print ("Somme :",somme)
+
+#4
+expression = "0123456789" * 5
+expression = "XX" + expression
+print(expression)
+
+for i in expression:
+    expression = expression / 2
+    print('--{0:51.50f}--'.format(expression))
+    
+#correction
+val = 1
+print("xx" + "0123456789"*5)
+for i in range(50):
+    val = val / 2
+    print("{0:51.50f}".format(val))
+
+#5
+compteur = 0
+uti = int(input("Entrez un nombre à deux chiffre :"))
+for i in range(10,100):
+    if i//10 == 7 or (i- 10*(i//10)) == 7:
+        compteur = compteur + 1
+print(compteur)
+    
+#6
+n = input("Entrez un mot : ").upper()
+liste_voyelle = ["A", "E", "I", "O", "U", "Y"]
+nb_voyelles = 0
+compteur_consonnes = 0
+
+for lettre in n:
+    if lettre in liste_voyelle:
+        nb_voyelles += 1      
+        print(lettre, "est une voyelle")
+    else:
+        print (lettre, "est une consonne")
+        compteur_consonnes += 1
+print(n, "possède", len(n), "lettres")
+print("Totale de", nb_voyelles, "voyelles, et de", compteur_consonnes, "consonnes")
+
+
+#7
+nom = input("Entrer votre nom : ")
+Message = nom
+a_crypter= Message.upper()
+lg=len(a_crypter)
+MessageCrypte=""
+for i in range(lg):
+    if a_crypter[i]==' ':
+        MessageCrypte+=' '
+    else:
+        asc=ord(a_crypter[i])+3
+        MessageCrypte+=chr(ord(a_crypter[i])+3)
+        print (MessageCrypte)
+nom_crypter = input("Entrer nom crypter")
+MessageCrypte = nom_crypter
+lg=len(MessageCrypte)
+MessageClair=""
+for i in range(lg):
+    if MessageCrypte[i]==' ':
+        MessageClair+=' '
+    else:
+        asc=ord(MessageCrypte[i])-3
+        MessageClair+=chr(ord(MessageCrypte[i])-3)
+
+print (MessageClair)
+
+
+#8
+CodeWeb = "<html><head><title>Mon Titre</title></head><body>Texte sur la page</body></html>"
+
+for i in CodeWeb, i:
+    if i == "<":
+        CodeWeb.find(">")
+        print(CodeWeb[1:5])
+        print(CodeWeb[7:11])
+        print(CodeWeb[13:18])
+        print(CodeWeb[19:28])
+        print(CodeWeb[30:35])
+        print(CodeWeb[38:42])
+        print(CodeWeb[44:48])
+        print(CodeWeb[49:66])
+        print(CodeWeb[68:72])
+        print(CodeWeb[75:79])
+       
+
+
+
+#Dans une boucle for tu doit mettre un if avec pour condition si le caractère est le symbole "<"
+#alors là tu utilise le find pour chercher le symbole ">"
+
+
+#9
+liste = {"1":"Lundi", "2":"Mardi", "3":"Mercredi", "4":"Jeudi", "5":"Vendredi", "6":"Samedi", "7":"Dimance"}
+nombre_jour = int(input("Entrez le nombre de jours dans le mois : "))
+jour_mois = int(input("Entrez le premier jour du mois : 1 pour lundi, 7 pour dimanche : "))
+
+for i in liste:
+    
+
+
+#10
+import random
+utilisateur = input("Entrez le nombre de tirage a effectué : ")
+tirage_pile = 0
+tirage_face = 0
+
+for i in utilisateur:
+    pile_face = random.randint(0,1)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

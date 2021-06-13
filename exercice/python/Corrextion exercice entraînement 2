@@ -1,0 +1,35 @@
+#1. Calculer la somme des éléments d’une liste
+liste=[5,6,2,1]
+print(liste)
+somme=0
+for i in liste:
+   somme+=i
+print(somme)
+
+#2. Répartir les nombres pairs et impairs dans deux listes
+L =[0,1,2,3,4,5,6,7,8,9]
+Lpair = list()
+Limpair = list()
+
+for k in L :
+    if k % 2 is 0:
+        Lpair.append(k)
+    else :
+        Limpair.append(k)
+
+print("Voici la liste de nombres pairs {0}".format(Lpair))
+print("Voici la liste de nombres impairs {0}".format(Limpair))
+
+#3
+L=[0]*10
+liste = [0,4,6,7,4,2,2,6,3]
+N=[0,1,2,3,4,5,6,7,8,9]
+
+for i in liste:
+    for v in N:
+         if i==v:
+            L[v]+=1
+print(L)
+for v in N:
+    if L[v]!= 0 :
+        print("Le chiffre",v,"apparaît",L[v],"fois")

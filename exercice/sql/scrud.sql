@@ -1,0 +1,56 @@
+#RETRIEVE
+DELIMITER ||
+CREATE PROCEDURE PSGetActor(IN ID SMALLINT)
+BEGIN 
+	SELECT * 
+    FROM actor
+    WHERE actor_id = ID;
+END||
+
+CREATE PROCEDURE PL_actor(IN prenom VARCHAR(128))
+BEGIN 
+	SELECT *
+    FROM actor
+    WHERE first_name = prenom;
+END||
+
+CREATE PROCEDURE PLAFN(IN nom VARCHAR(128))
+BEGIN
+	SELECT *
+    FROM actor
+    WHERE last_name = nom;
+END||
+
+DELIMITER ;
+
+CALL PSGetActor(1);
+CALL PL_actor('JENNIFER');
+CALL PLAFN('CHASE');
+
+
+#DELETE
+DELIMITER ||
+CREATE PROCEDURE PdActor(IN ID SMALLINT)
+BEGIN 
+	DELETE
+    FROM actor
+    WHERE actor_id = ID;
+END||
+
+CREATE PROCEDURE PL_actor(IN prenom VARCHAR(128))
+BEGIN 
+	DELETE
+    FROM actor
+    WHERE first_name = prenom;
+END||
+
+CREATE PROCEDURE PLAFN(IN nom VARCHAR(128))
+BEGIN
+	DELETE
+    FROM actor
+    WHERE last_name = nom;
+END||
+DELIMITER ;
+
+CALL PdActor(4);
+
